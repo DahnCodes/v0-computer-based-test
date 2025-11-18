@@ -541,7 +541,7 @@ function StudentRegistration({ classes }) {
     _s();
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [selectedClass, setSelectedClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
-    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [school, setSchool] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -558,7 +558,7 @@ function StudentRegistration({ classes }) {
                 {
                     name: name.trim(),
                     class_id: selectedClass,
-                    email: email.trim() || null
+                    school: school.trim() || null
                 }
             ]).select();
             if (registerError) {
@@ -642,18 +642,18 @@ function StudentRegistration({ classes }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                     htmlFor: "email",
                                     className: "block text-sm font-medium mb-1",
-                                    children: "Email (Optional)"
+                                    children: "School *"
                                 }, void 0, false, {
                                     fileName: "[project]/v0-computer-based-test/components/student-registration.tsx",
                                     lineNumber: 99,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                    id: "email",
-                                    type: "email",
-                                    value: email,
-                                    onChange: (e)=>setEmail(e.target.value),
-                                    placeholder: "Enter your email",
+                                    id: "school",
+                                    type: "text",
+                                    value: school,
+                                    onChange: (e)=>setSchool(e.target.value),
+                                    placeholder: "Enter your school",
                                     disabled: loading
                                 }, void 0, false, {
                                     fileName: "[project]/v0-computer-based-test/components/student-registration.tsx",
@@ -758,7 +758,7 @@ function StudentRegistration({ classes }) {
         columnNumber: 5
     }, this);
 }
-_s(StudentRegistration, "+JOSov7e9dufky52P08ShjE8kok=", false, function() {
+_s(StudentRegistration, "MZGKm7TddHOE+qlRaKTOvhdmMtw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];

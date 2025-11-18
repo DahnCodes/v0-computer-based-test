@@ -26,7 +26,7 @@ interface StudentRegistrationProps {
 export function StudentRegistration({ classes }: StudentRegistrationProps) {
   const [name, setName] = useState('')
   const [selectedClass, setSelectedClass] = useState('')
-  const [email, setEmail] = useState('')
+  const [school, setSchool] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const router = useRouter()
@@ -49,7 +49,7 @@ export function StudentRegistration({ classes }: StudentRegistrationProps) {
           {
             name: name.trim(),
             class_id: selectedClass,
-            email: email.trim() || null,
+            school: school.trim() || null,
           },
         ])
         .select()
@@ -97,14 +97,14 @@ export function StudentRegistration({ classes }: StudentRegistrationProps) {
 
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Email (Optional)
+             School *
             </label>
             <Input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
+              id="school"
+              type="text"
+              value={school}
+              onChange={(e) => setSchool(e.target.value)}
+              placeholder="Enter your school"
               disabled={loading}
             />
           </div>

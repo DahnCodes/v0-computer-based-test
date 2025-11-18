@@ -478,7 +478,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$t
 function StudentRegistration({ classes }) {
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
     const [selectedClass, setSelectedClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
-    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
+    const [school, setSchool] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -495,7 +495,7 @@ function StudentRegistration({ classes }) {
                 {
                     name: name.trim(),
                     class_id: selectedClass,
-                    email: email.trim() || null
+                    school: school.trim() || null
                 }
             ]).select();
             if (registerError) {
@@ -579,18 +579,18 @@ function StudentRegistration({ classes }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                     htmlFor: "email",
                                     className: "block text-sm font-medium mb-1",
-                                    children: "Email (Optional)"
+                                    children: "School *"
                                 }, void 0, false, {
                                     fileName: "[project]/v0-computer-based-test/components/student-registration.tsx",
                                     lineNumber: 99,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$v0$2d$computer$2d$based$2d$test$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                    id: "email",
-                                    type: "email",
-                                    value: email,
-                                    onChange: (e)=>setEmail(e.target.value),
-                                    placeholder: "Enter your email",
+                                    id: "school",
+                                    type: "text",
+                                    value: school,
+                                    onChange: (e)=>setSchool(e.target.value),
+                                    placeholder: "Enter your school",
                                     disabled: loading
                                 }, void 0, false, {
                                     fileName: "[project]/v0-computer-based-test/components/student-registration.tsx",
